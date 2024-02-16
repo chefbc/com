@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   mkdocs:
-    image: squidfunk/mkdocs-material
+    build: .
+    # image: squidfunk/mkdocs-material
     # command: --serve
     volumes:
       - .:/docs
